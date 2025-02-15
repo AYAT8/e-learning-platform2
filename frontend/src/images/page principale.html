@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتعلم - منصة تعليمية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #1f2c70;
+            padding: 10px 15px;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .navbar-toggler {
+            color: white;
+            border: none;
+        }
+        .nav-item i {
+            margin-left: 5px;
+        }
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 32px;
+            font-weight: bold;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+        }
+        .category {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+        .category img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        .primary { background-color: #E74C3C; }
+        .middle { background-color: #27AE60; }
+        .high { background-color: #2980B9; }
+        .adults { background-color: #F39C12; }
+        .footer {
+            background-color: #1f2c70;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .footer a { color: white; text-decoration: none; }
+        .footer .contact, .footer .links {
+            text-align: right;
+        }
+        .footer .social-icons i {
+            font-size: 24px;
+            margin: 10px;
+        }
+        .indicators {
+            text-align: center;
+            padding: 20px;
+        }
+        .indicators span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 5px;
+            background: white;
+            border-radius: 50%;
+        }
+        .indicators .active {
+            background: #c3d802;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="نتعلم"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-home"></i>الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-book"></i>الدروس</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-newspaper"></i>مقالات</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fas fa-envelope"></i>إتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <h1>معاك باش تنجح</h1>
+    </section>
+    <div class="container my-4">
+        <div class="category primary">
+            <img src="primary.jpg" alt="الابتدائي">
+            دروس وتمارين المستوى الابتدائي <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="category middle">
+            <img src="middle.jpg" alt="الإعدادي">
+            الإعدادي <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="category high">
+            <img src="high.jpg" alt="الثانوي">
+            الثانوي <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="category adults">
+            <img src="adults.jpg" alt="غير متمدرسين">
+            الغير متمدرسين <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+    <div class="indicators">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-6 contact">
+                <h5>تواصل معنا</h5>
+                <p>الهاتف: +212 777 898 858</p>
+                <p>البريد الإلكتروني: <a href="mailto:nataalamcenter@gmail.com">nataalamcenter@gmail.com</a></p>
+                <p>العنوان: رقم 5، شارع العقيبة، التجزئة 5 (قبالة صيدلية تجب)</p>
+            </div>
+            <div class="col-md-6 links">
+                <h5>أقسام الموقع</h5>
+                <p>الرئيسية | الدروس | مقالات | مركز نتعلم | إتصل بنا</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

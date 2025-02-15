@@ -11,17 +11,6 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.tajawal-light {
-  font-family: "Tajawal", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.baloo-bhaijaan {
-  font-family: "Baloo Bhaijaan 2", serif;
-  font-optical-sizing: auto;
-  font-weight: 456;
-  font-style: normal;
-}
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
