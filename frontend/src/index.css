@@ -15,13 +15,36 @@
     font-style: normal;
   }
 
-  .arabic-text {
-    font-family: "Tajawal", serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1.8;
-    word-spacing: 6px; /* Ajuste selon ton besoin */
-    text-rendering: optimizeLegibility; /* Améliore le rendu des polices */
-    direction: rtl; /* Assure une bonne direction pour l'arabe */
+  
+  @font-face {
+    font-family: 'arabic';
+    src: url('..\public\fonts\Rubik-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: 32px 0 #000, -32px 0 #000;
+    position: relative;
+    animation: flash 0.5s ease-out infinite alternate;
   }
   
+  @keyframes flash {
+    0% {
+      background-color: #0002;
+      box-shadow: 32px 0 #0002, -32px 0 #000;
+    }
+    50% {
+      background-color: #000;
+      box-shadow: 32px 0 #0002, -32px 0 #0002;
+    }
+    100% {
+      background-color: #0002;
+      box-shadow: 32px 0 #000, -32px 0 #0002;
+    }
+  }
+        
+ 

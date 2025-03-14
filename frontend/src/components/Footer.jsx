@@ -10,7 +10,7 @@ const Footer = () => {
     
             <div className="sm:hidden flex flex-col items-start self-start mb-6">
     
-            <h1 className="text-4xl  arabic-text">نتعلم</h1>
+            <h1 className="text-4xl  arabic-text"><img src="/images/Logo.png" alt="Logo" className="h-8 w-auto" /></h1>
     
             <div className="w-40 h-[2px] bg-gray-500 my-1"></div>
     
@@ -98,7 +98,7 @@ const Footer = () => {
     
               <div className="flex flex-col items-start text-right mb-6 md:mb-0">
     
-                <h1 className="text-4xl md:text-5xl font-extrabold font-[Tajawal]">نتعلم</h1>
+                <h1 className="text-4xl md:text-5xl font-extrabold font-[Tajawal]"><img src="/images/Logo.png" alt="Logo" className="h-8 w-auto" /></h1>
     
                 <div className="w-40 h-[2px] bg-gray-500 my-1"></div>
     
@@ -160,7 +160,7 @@ const Footer = () => {
     
                 <p className="text-gray-300"> البريد الإلكتروني</p>
     
-                <p className="mb-2 font-medium text-gray-400">nataalamcenter@gmail.com</p>
+                <p className="mb-2 font-medium text-gray-400">nataalamacademy@gmail.com</p>
     
                 <p className="text-gray-300">العنوان</p>
     
@@ -171,9 +171,12 @@ const Footer = () => {
               </div>
     
             </div>
-    
+    <div className="border-t border-gray-500 my-4"></div>
+
           </div>
-    
+
+    <div className="text-center text-gray-400 text-xs">جميع الحقوق محفوظة لمنصة نتعلم 2025</div>
+
         </footer>
     
       );
