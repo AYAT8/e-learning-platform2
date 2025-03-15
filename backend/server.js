@@ -44,11 +44,11 @@ fetch("http://localhost:5000/api/levels/name/:name")
 fetch("http://localhost:5000/api/subjects")
 
 
-const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({ 
   service: "gmail", // Utilisez votre service de messagerie (ex: Gmail, Outlook, etc.)
   auth: {
     user: "nataalamacademy@gmail.com", // Remplacez par votre email
-    pass: "e-learning nataalam2", // Remplacez par votre mot de passe
+    pass: "AYAELHABIB2004", // Remplacez par votre mot de passe
   },
 });
 
